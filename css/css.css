@@ -1,0 +1,365 @@
+body{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+}
+body,
+html,
+li{
+    margin: 0;
+    padding: 0;
+}
+ul,
+ol{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+.layout{
+    width: 1140px;
+    margin: 0 auto;
+}
+.clear:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.bg-color{
+    background: #f7f7f7;
+}
+header{
+    background: #000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 2;
+}
+header .logo{
+    color: #fed136;
+    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    font-size: 2em;
+    float: left;
+    text-transform: capitalize; 
+}
+header ul{
+    float: right;
+}
+header ul li {
+    display: inline-block;
+    line-height: 42px;
+
+}
+header ul li a{
+    color: #fff;
+    padding:20px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+header ul li a:hover{
+    background: #fed136;
+
+    border-radius: 2px;
+}
+section.welcome{
+    margin-top: 82px;
+    background: url(../img/header-bg.jpg) no-repeat center center;
+    padding: 200px 0;
+    text-align: center;
+    color: #fff;
+}
+section.welcome p{
+    font-size: 40px;
+    font-style: italic;
+    line-height: 40px;
+    margin-bottom:2px;
+}
+section.welcome h1{
+    font-size: 75px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+section.welcome button{
+    background: #fed136;
+    color: #fff;
+    padding: 20px 40px;
+    border-radius: 2px;
+    cursor: pointer;
+    border: none;
+    font-size:1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+main >section{
+    text-align: center;
+    padding: 150px 0;
+}
+main >section h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+}
+main >section p.subtit{
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom:70px;
+    color: #777;
+}
+.service ul li{
+    width: 340px;
+    float: left;
+    margin: 0 20px;
+}
+.service ul li i.icon{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #fed136;
+    display: inline-block;
+    line-height: 100px;
+}
+.service ul li i.icon-cart:before{
+    font-size: 60px;
+    position: relative;
+    top: 8px;
+}
+.service ul li i.icon-baocundaodiannao:before{
+    font-size: 42px;
+}
+.service ul li i.icon-lock:before{
+    font-size: 60px;
+}
+.service ul li h3{
+    font-size: 18px;
+}
+.service ul li p{
+    color: #777;
+}
+.portfolio ul li{
+    background: #fff;
+    width: 360px;
+    margin: 0 10px 20px 10px;
+    float: left;
+    padding-bottom: 30px;
+    position: relative;
+}
+.portfolio ul li img{
+    width: 360px;
+    margin-bottom: 30px;
+}
+.portfolio ul li h3{
+    margin: 0;
+    text-transform: capitalize;
+}
+.portfolio ul li p{
+    font-style: italic;
+    font-size: 16px;
+    color: #777;
+    margin: 0;
+}
+.portfolio ul li a{
+
+    width: 360px;
+    height: 260px;
+}
+.portfolio ul li a .icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 260px;
+    width: 360px;
+    background: rgba(254,209,54,.8);
+    line-height:260px;
+    display: none;
+}
+.portfolio ul li a:hover .icon{
+    display: block;
+}
+.portfolio ul li .icon-add{
+    font-size: 40px;
+}
+.about ol li{
+    position: relative;
+    padding-bottom: 120px;
+    
+}
+.about ol li img{
+    width: 156px;
+    border: 7px solid #f1f1f1;
+    border-radius: 50%;
+}
+.about ol li:before{
+    content: "";
+    display: block;
+    border-left: 2px solid #f1f1f1;
+    position:absolute;
+    left: 50%;
+    height: 100%;
+    z-index: -1;
+}
+.about ol li .about-details{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 350px;
+    margin-left: 100px;
+    text-align: right;
+
+}
+.about ol li:nth-child(even) .about-details{
+    right: 0;
+    left: auto;
+    margin-right: 100px;
+    text-align: left;
+}
+.about ol li .about-details time{
+    font-size: 18px;
+    font-weight: bold;
+}
+.about ol li .about-details h3{
+    margin: 0;
+}
+.about ol li i{
+    width: 156px;
+    height: 100px;
+    border: 7px solid #f1f1f1;
+    border-radius: 50%;
+    background: #fed136;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 33px;
+    padding:28px 0;
+}
+.about ol li:last-child{
+    padding-bottom: 0;
+}
+.team ul li{
+    width: 300px;
+    margin: 0 40px;
+    float: left;
+}
+.team ul li img{
+    width: 239px;
+    border: 7px solid #fff;
+    height: 239px;
+    border-radius: 50%;
+}
+.team ul li h3{
+    font-size: 18px;
+    margin-bottom: 0;    
+}
+.team ul li p{
+    color: #777;
+    margin: 0;
+}
+.team ul li .iconall i{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #000;
+    display: inline-block;
+    line-height: 40px;
+    margin: 10px 5px;
+    cursor: pointer;
+}
+.team ul li .iconall i:hover{
+    background: #fed136;
+}
+.subtit.wid{
+    width: 750px;
+    margin: 30px auto;
+}
+aside img{
+    margin:50px 34px;
+}
+.contact{
+    background: url(../img/map-image.png) #222 center 30px no-repeat;
+}
+.contact h1{
+    color: #fff;
+}
+.contact .form-half{
+    width: 44%;
+    float: left;
+    margin: 0 3%;
+}
+.contact input.input-text{
+    padding: 20px;
+    border-radius: 2px;
+    border: 0;
+    width:100%;
+    box-shadow: 1px 2px 5px rgba(0,0,0,.3);
+    margin-bottom: 20px;
+}
+.contact textarea.area-text{
+    padding: 20px;
+    border-radius: 2px;
+    border: 0;
+    width:100%;
+    box-shadow: 1px 2px 5px rgba(0,0,0,.3);
+    margin-bottom: 20px;
+    height: 164px;
+}
+::-webkit-input-placeholder,
+::-moz-placeholder { /* WebKit browsers */ 
+    text-transform: uppercase;
+    color: #999;
+    font-size: 14px;
+} 
+.contact .button input{
+    padding: 20px 40px;
+    background: #fed136;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.contact .button input:hover{
+    background: #fdcb20;
+}
+footer{
+    margin: 20px 0;
+}
+footer .copy,
+footer .quicklink,
+footer .icon-m{
+    float: left;
+    margin: 0 30px;
+    width: 300px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+}
+footer .quicklink{
+    float: right;
+}
+footer .quicklink a{
+    color: #fed136;
+    margin-right: 10px;
+}
+footer .quicklink a:hover{
+    text-decoration: underline;
+}
+footer .icon-m .icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #000;
+    display: inline-block;
+    line-height: 40px;
+    margin: 0 5px;
+    cursor: pointer;
+    text-align: center;
+}
